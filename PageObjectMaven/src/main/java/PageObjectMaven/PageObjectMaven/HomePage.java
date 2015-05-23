@@ -21,7 +21,8 @@ public class HomePage extends AbstractPage {
 	public boolean username(){
 		pageLoad();
 		
-		return driver.findElement(By.tagName("body")).getText().contains("Hi sravans... !");
+		//System.out.println(driver.findElement(By.tagName("body")).getText());
+		return driver.findElement(By.tagName("body")).getText().contains("Hi sravansa!");
 		
 		
 	}

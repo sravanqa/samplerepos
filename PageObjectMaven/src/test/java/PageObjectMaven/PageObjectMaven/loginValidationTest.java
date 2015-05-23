@@ -33,6 +33,12 @@ public class loginValidationTest {
 	}
 	
 	
+
+	/**
+	    ----------------    User login with valid details ---------------------  
+	  
+	  */
+	
 	@Test
 	public void userCanLoginWithValidDetails() throws InterruptedException {
 		//user can login with valid details
@@ -51,7 +57,13 @@ public class loginValidationTest {
 		onHomePage.logOut();
 	}
 	
-	@Test
+	
+	
+	/**
+	    ----------------    User logout ---------------------  
+	  
+	  */
+ 	@Test
 	public void logOutSuccess() throws InterruptedException {
 		MainPage onMainPage= new MainPage(driver);
 		HomePage onHomePage= onMainPage.navigateMainPage().clickonLogin().fillLoginDetails().successfulLogin();

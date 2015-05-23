@@ -16,7 +16,7 @@ public class MainPage extends AbstractPage {
 	//	driver.findElement(By.xpath("html/body/div[4]/div/div/a")).click();
 	//	Thread.sleep(1000);
 		
-		driver.findElement(By.xpath("//a[@href='https://www.flipkart.com/account/login?from=header']")).click();
+		driver.findElement(By.xpath("//*[@id='fk-mainhead-id']/div[1]/div/div[2]/div[1]/ul/li[8]/a")).click();
 		return new LoginPage(driver);
 	}
 }

@@ -32,7 +32,8 @@ public class AbstractPage {
 	
 	public MainPage navigateMainPage() throws InterruptedException{
 		
-		driver.findElement(By.xpath("html/body/div[4]/div/div/a")).click();
+	//	driver.findElement(By.xpath("html/body/div[4]/div/div/a")).click();
+	//	driver.get("https://flipkart.com");
 		Thread.sleep(1000);
 		return new MainPage(driver);
 	}
